@@ -1,0 +1,28 @@
+
+{% block head %}
+<title>Calculator</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div class="content">
+    <h1 style="text-align: center">ABC GO Details</h1>
+
+    <div class="form">
+        <form action="/info" method="POST">
+            <label for="operation">Company Info</label>
+
+            Company Name:<input type ="text"name ="C_Name"id="C_Name"><br>
+            <br>
+            Location :<input type ="text"name="Loc"id="Loc"><br>
+            <br>
+            Contact No :<input type ="text"name="cont"id="C_Det"><br> 
+            <br>
+            <input type ="Submit"name ="save"id="Save">
+            
+        </form>
+    </div>
+</div>
+
+{% endblock %}
